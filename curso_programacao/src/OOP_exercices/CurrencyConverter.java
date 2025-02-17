@@ -3,7 +3,7 @@ package OOP_exercices;
 public class CurrencyConverter {
 	public static double DollarPrice = 3.10;
 	
-	public static double ConverterInReal(double dollars)
+	public static double converterInReal(double dollars)
 	{
 		double convertedReal = dollars * DollarPrice;
 		double tax = convertedReal * 0.06;

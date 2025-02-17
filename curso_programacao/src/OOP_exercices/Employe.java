@@ -1,20 +1,20 @@
 package OOP_exercices;
 
 public class Employe {
-	public String Name;
-	public double GrossSalary;
-	public double Tax;
+	public String name;
+	public double grossSalary;
+	public double tax;
 	
 	public void NetSalary() {
-		double salary = GrossSalary - Tax;
-		System.out.printf("Employee: %s, $ %.2f", Name, salary);
+		double salary = grossSalary - tax;
+		System.out.printf("Employee: %s, $ %.2f", name, salary);
 	}
 	
 	public void IncreaseSalary(double percentage) {
 		double percent = percentage / 100;
-		double increase = percent * GrossSalary;
-		double salaryIncreased = increase + (GrossSalary - Tax);
+		double increase = percent * grossSalary;
+		double salaryIncreased = increase + (grossSalary - tax);
 		
-		System.out.printf("Updated data: %s, $ %.2f", Name, salaryIncreased);
+		System.out.printf("Updated data: %s, $ %.2f", name, salaryIncreased);
 	}
 }

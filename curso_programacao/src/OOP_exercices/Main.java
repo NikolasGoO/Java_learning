@@ -10,7 +10,7 @@ public class Main {
 		System.out.println("Quantos dólares você deseja comprar: ");
 		double buyDollar = sc.nextDouble();
 		
-		double convertedToReal = CurrencyConverter.ConverterInReal(buyDollar);
+		double convertedToReal = CurrencyConverter.converterInReal(buyDollar);
 		
 		System.out.printf("Preço a pagar em R$: $ %.2f", convertedToReal);
 		sc.close();
